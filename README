@@ -11,13 +11,9 @@ Contents
 
 0. Installation
 git clone https://github.com/tfla/cs_eda016
-mkdir bin
-javac -d /bin/ ./cs_eda016/cs_eda016/src/se/lth/cs/ptdc/*/*.java
-jar -cf cs_eda016.jar ./bin/se/lth/cs/ptdc/*/*.class
-javac -classpath ./cs_eda016.jar -d ./bin/ ./inl2/*.java
-
-(Yeah, they don't really work at the moment, going to solve that 
-soon rather than later.)
+javac -d . cs_eda016/cs_eda016/src/se/lth/cs/ptdc/*/*.java
+jar -cf cs_eda016.jar se/lth/cs/ptdc/*/*.class
+javac -classpath cs_eda016.jar -d . cs_eda016/inl2/*.java
 
 Substitude inl2 with whatever folder it is you are interested in 
 building. Some folders (inl1, lab05 and lab06) requires 
