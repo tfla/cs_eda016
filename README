@@ -1,5 +1,3 @@
-<cs_eda016>, <1.0>
-
 Thank you for taking your time to look at this project. These 
 are the source-code files from my first programming course in 
 Computer Sciences at Univeristy of Lund, and are mainly used by 
@@ -12,12 +10,16 @@ Contents
 2. Contact
 
 0. Installation
-git --clone https://github.com/tfla/cs_eda016
-javac ./cs_eda016/cs_eda016/src/se/lth/cs/ptdc/*/*.java
-jar -cf cs_eda016.jar ./se/lth/cs/ptdc/*/*.class
-javac -classpath ./cs_eda016.jar ./inl1/*.java
+git clone https://github.com/tfla/cs_eda016
+mkdir bin
+javac -d /bin/ ./cs_eda016/cs_eda016/src/se/lth/cs/ptdc/*/*.java
+jar -cf cs_eda016.jar ./bin/se/lth/cs/ptdc/*/*.class
+javac -classpath ./cs_eda016.jar -d ./bin/ ./inl2/*.java
 
-Substitude inl1 with whatever folder it is you are interested in 
+(Yeah, they don't really work at the moment, going to solve that 
+soon rather than later.)
+
+Substitude inl2 with whatever folder it is you are interested in 
 building. Some folders (inl1, lab05 and lab06) requires 
 Turtle.java (from lab04) in the build path too.
 
