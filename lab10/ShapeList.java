@@ -61,4 +61,8 @@ public class ShapeList {
 	public int size() {
 		return shapes.size();
 	}
+
+    public Shape get(int i) {
+		return shapes.get(i);
+	}
 }

@@ -1,5 +1,6 @@
 import se.lth.cs.ptdc.shapes.Shape;
 import se.lth.cs.ptdc.window.SimpleWindow;
+import java.awt.Color;
 
 public class Triangle extends Shape {
 	int s;
@@ -10,6 +11,7 @@ public class Triangle extends Shape {
 	}
 	
 	public void draw(SimpleWindow w){
+//		w.setLineColor(Color.BLUE);
 		w.moveTo(x,y);
 		w.lineTo(x+s/2,y-s);
 		w.lineTo(x+s,y);
@@ -17,15 +19,7 @@ public class Triangle extends Shape {
 		w.moveTo(0,0);
 	}
 
-        public int getX() {
-            return x;
-        }
-
-        public int getY() {
-            return y;
-        }
- 
-        public int getS() {
-            return s;
+        public String toString() {
+            return "T " + x + " " + y + " " + s;
         }
 }
