@@ -1,0 +1,10 @@
+# Ignore bytecode files #
+*.class
+
+# Ignore package files #
+*.jar
+*.war
+*.ear
+
+# Ignore vim autosave-files #
+*.swp
